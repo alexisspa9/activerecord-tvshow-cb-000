@@ -3,13 +3,13 @@ class Show < ActiveRecord::Base
     Show.maximum(:rating)
   end
   def self.most_popular_show
-
+    Show.maximum(:rating)
   end
   def self.lowest_rating
-
+    Show.minimum(:rating)
   end
   def self.least_popular_show
-
+    Show.minimum(:rating)
   end
   def self.ratings_sum
 Show.sum(:rating)
