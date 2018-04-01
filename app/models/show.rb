@@ -7,7 +7,7 @@ class Show < ActiveRecord::Base
     this_show.name
   end
   def self.lowest_rating
-    Show.minimum(:rating)
+    Show.minimum(:rating).s
   end
   def self.least_popular_show
     this_show = Show.minimum(:rating)
