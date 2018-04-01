@@ -18,7 +18,7 @@ Show.sum(:rating)
 Show.where("rating > ?", 5)
   end
   def self.shows_by_alphabetical_order
-Show.all.order
+Show.all.order(:name)
   end
 
 end
